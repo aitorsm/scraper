@@ -92,7 +92,7 @@ def main()-> None:
     print(f"The search list is {search_list}")
 
     add_string = ''
-    search_list[:]=[element.strip() + " seedling" for element in search_list]
+    search_list[:]=[element.strip() + add_string for element in search_list]
     print(f"Modified list is {search_list}")
     thread_list = []
     for i in range(len(search_list)): # Create a thread for every search term
